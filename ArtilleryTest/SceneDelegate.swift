@@ -9,6 +9,24 @@
 import UIKit
 import SwiftUI
 
+struct ViewControllerHolder {
+    weak var value: UIViewController?
+}
+
+struct ViewControllerKey: EnvironmentKey {
+    static var defaultValue: ViewControllerHolder {
+        return ViewControllerHolder(value: UIApplication.shared.windows.first?.rootViewController)
+
+    }
+}
+
+extension EnvironmentValues {
+    var viewController: UIViewController? {
+        get { return self[ViewControllerKey.self].value }
+        set { self[ViewControllerKey.self].value = newValue }
+    }
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 	var window: UIWindow?
@@ -21,7 +39,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 		// Create the SwiftUI view that provides the window contents.
 		let contentView = ContentView()
+			.environmentObject(FirebaseAuthManager.instance)
 
+		
 		// Use a UIHostingController as window root view controller.
 		if let windowScene = scene as? UIWindowScene {
 		    let window = UIWindow(windowScene: windowScene)
