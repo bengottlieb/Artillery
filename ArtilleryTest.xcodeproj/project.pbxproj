@@ -64,6 +64,7 @@
 		B52D49582424375900E14D67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B52D496F24243E8C00E14D67 /* FirebaseAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthView.swift; sourceTree = "<group>"; };
 		B52D497124251B4600E14D67 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		B59A5F79242701E700DCF188 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B5BBA8BE24268F74003577A2 /* FirebaseAuthManager+Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirebaseAuthManager+Apple.swift"; sourceTree = "<group>"; };
 		B5BBA8C02426922E003577A2 /* ArtilleryTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArtilleryTest.entitlements; sourceTree = "<group>"; };
 		B5BBA8C12426C245003577A2 /* String+Nonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Nonce.swift"; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 		B52D49382424364A00E14D67 = {
 			isa = PBXGroup;
 			children = (
+				B59A5F79242701E700DCF188 /* Package.swift */,
 				B5BBA8C32426D3DC003577A2 /* ReadMe.txt */,
 				B5815E072425803C0005E6FB /* Source */,
 				B52D49432424364A00E14D67 /* ArtilleryTest */,
@@ -531,26 +533,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseFirestore",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseDatabase",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseCrashlytics",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseInAppMessaging",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseDynamicLinks",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseRemoteConfig",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseABTesting",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseFunctions",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseStorage",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebasePerformance",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseMessaging",
-					"$(PROJECT_DIR)/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Firebase/FirebaseFirestore",
-					"$(PROJECT_DIR)/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Firebase/FirebaseDatabase",
-					"$(PROJECT_DIR)/Firebase/FirebaseStorage",
+					"$(PROJECT_DIR)/Firebase",
 				);
 				INFOPLIST_FILE = ArtilleryTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -579,26 +562,7 @@
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseFirestore",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseDatabase",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseCrashlytics",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseInAppMessaging",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseDynamicLinks",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseRemoteConfig",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseABTesting",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseFunctions",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseStorage",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebasePerformance",
-					"$(PROJECT_DIR)/ArtilleryTest/Firebase/FirebaseMessaging",
-					"$(PROJECT_DIR)/Firebase/FirebaseAnalytics",
-					"$(PROJECT_DIR)/Firebase/FirebaseFirestore",
-					"$(PROJECT_DIR)/Firebase/FirebaseAuth",
-					"$(PROJECT_DIR)/Firebase/GoogleSignIn",
-					"$(PROJECT_DIR)/Firebase/FirebaseDatabase",
-					"$(PROJECT_DIR)/Firebase/FirebaseStorage",
+					"$(PROJECT_DIR)/Firebase/",
 				);
 				INFOPLIST_FILE = ArtilleryTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
