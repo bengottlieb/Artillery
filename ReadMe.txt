@@ -12,3 +12,7 @@ Add the following Other Linker Flags in Project Settings
 
 - ObjC
 - lc++
+
+If you're using Google SignIn, you'll need to add a URL Type, most likely of the form com.googleusercontent.apps.XXX-XXX.
+
+
